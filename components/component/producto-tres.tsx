@@ -28,7 +28,7 @@ import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
-export function Producto-tres() {
+export function ProductoTres() {
   return (
     <div className="grid md:grid-cols-2 gap-6 lg:gap-12 items-start max-w-6xl px-4 mx-auto py-6">
       <div className="grid gap-4 md:gap-10 items-start">
@@ -93,7 +93,7 @@ export function Producto-tres() {
   )
 }
 
-function MinusIcon(props) {
+function MinusIcon(props : any) {
   return (
     <svg
       {...props}
@@ -113,7 +113,7 @@ function MinusIcon(props) {
 }
 
 
-function PlusIcon(props) {
+function PlusIcon(props : any) {
   return (
     <svg
       {...props}
@@ -134,7 +134,7 @@ function PlusIcon(props) {
 }
 
 
-function StarIcon(props) {
+function StarIcon(props: any) {
   return (
     <svg
       {...props}

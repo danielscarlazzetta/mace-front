@@ -25,15 +25,17 @@ import { Badge } from "@/components/ui/badge"
 export function FiltroListadoProductos() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-6 p-4 md:p-6">
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-950 p-4 md:p-6">
-        <h2 className="text-lg font-semibold mb-4">Filters</h2>
+      
+      
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700 p-4 md:p-6">
+        <h2 className="text-lg font-semibold mb-8">Filtro</h2>
         <div className="grid gap-4">
           <div className="relative">
             <label
-              className="absolute -top-3 left-3 text-sm font-medium text-gray-700 dark:text-gray-400 bg-white dark:bg-gray-950 px-1 z-10"
+              className="absolute -top-3 left-3 text-sm font-medium text-gray-700 dark:text-gray-400 bg-white dark:bg-gray-700 px-1 z-10"
               htmlFor="price-min"
             >
-              Minimum Price
+              Min
             </label>
             <div className="mt-1 relative rounded-md">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -50,10 +52,10 @@ export function FiltroListadoProductos() {
           </div>
           <div className="relative">
             <label
-              className="absolute -top-3 left-3 text-sm font-medium text-gray-700 dark:text-gray-400 bg-white dark:bg-gray-950 px-1 z-10"
+              className="absolute -top-3 left-3 text-sm font-medium text-gray-700 dark:text-gray-400 bg-white dark:bg-gray-700 px-1 z-10"
               htmlFor="price-max"
             >
-              Maximum Price
+              Max
             </label>
             <div className="mt-1 relative rounded-md">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -70,24 +72,24 @@ export function FiltroListadoProductos() {
           </div>
           <div className="relative">
             <label
-              className="absolute -top-3 left-3 text-sm font-medium text-gray-700 dark:text-gray-400 bg-white dark:bg-gray-950 px-1 z-10"
+              className="absolute -top-3 left-3 text-sm font-medium text-gray-700 dark:text-gray-400 bg-white dark:bg-gray-700 px-1 z-10"
               htmlFor="product-name"
             >
-              Product Name
+              Producto
             </label>
             <div className="mt-1">
               <input
                 className="shadow-sm focus:ring-0 focus:border-gray-300 block w-full sm:text-sm border-0 rounded-md dark:bg-gray-800 dark:text-gray-400 transition-all duration-300 ease-in-out transform focus:scale-105 pt-3 pb-1"
                 id="product-name"
                 name="product-name"
-                placeholder="Search by product name"
+                placeholder="    Busca aqui"
                 type="text"
               />
             </div>
           </div>
           <div className="relative">
             <label
-              className="absolute -top-3 left-3 text-sm font-medium text-gray-700 dark:text-gray-400 bg-white dark:bg-gray-950 px-1 z-10"
+              className="absolute -top-3 left-3 text-sm font-medium text-gray-700 dark:text-gray-400 bg-white dark:bg-gray-700 px-1 z-10"
               htmlFor="tags"
             >
               Tags
@@ -106,12 +108,15 @@ export function FiltroListadoProductos() {
             </div>
           </div>
           <Button className="w-full" size="sm">
-            Apply Filters
+            Aplicar filtro
           </Button>
         </div>
       </div>
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-950">
+
+
+
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-200">
           <div className="relative group">
             <img
               alt="Producto 1"
@@ -152,14 +157,17 @@ export function FiltroListadoProductos() {
               </Button>
               <Link
                 className="inline-flex h-8 items-center justify-center rounded-md bg-[#008CBA] px-4 text-sm font-medium text-white shadow transition-colors hover:bg-[#006D9C] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#006D9C] disabled:pointer-events-none disabled:opacity-50 dark:bg-[#008CBA] dark:hover:bg-[#006D9C] dark:focus-visible:ring-[#006D9C]"
-                href="#"
+                href="/producto1"
               >
                 Ver producto
               </Link>
             </div>
           </div>
         </div>
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-950">
+
+
+
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-300">
           <div className="relative group">
             <img
               alt="Producto 2"
@@ -207,7 +215,9 @@ export function FiltroListadoProductos() {
             </div>
           </div>
         </div>
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-950">
+
+
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-400">
           <div className="relative group">
             <img
               alt="Producto 3"
@@ -255,7 +265,109 @@ export function FiltroListadoProductos() {
             </div>
           </div>
         </div>
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-950">
+
+
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-500">
+          <div className="relative group">
+            <img
+              alt="Producto 4"
+              className="w-full h-60 object-cover"
+              height={300}
+              src="/placeholder.svg"
+              style={{
+                aspectRatio: "400/300",
+                objectFit: "cover",
+              }}
+              width={400}
+            />
+            <Link className="absolute inset-0 z-10" href="#">
+              <span className="sr-only">View</span>
+            </Link>
+          </div>
+
+          <div className="p-4 flex flex-col gap-4">
+            <div>
+              <h3 className="text-lg font-semibold">Producto 4</h3>
+              <div className="flex items-center gap-2">
+                <Badge className="bg-[#673AB7] text-white" variant="outline">
+                  Taza
+                </Badge>
+              </div>
+              <p className="text-gray-500 dark:text-gray-400">Descripción del producto 4</p>
+              <div className="flex justify-between items-center">
+                <p className="text-gray-500 dark:text-gray-400">En stock: 75 unidades</p>
+                <p className="text-lg font-semibold">$59.99</p>
+              </div>
+            </div>
+            <div className="flex justify-between gap-2">
+              <Button
+                className="bg-[#4CAF50] text-white hover:bg-[#45a049] dark:bg-[#4CAF50] dark:text-white dark:hover:bg-[#45a049]"
+                size="sm"
+                variant="outline"
+              >
+                Agregar al carrito
+              </Button>
+              <Link
+                className="inline-flex h-8 items-center justify-center rounded-md bg-[#008CBA] px-4 text-sm font-medium text-white shadow transition-colors hover:bg-[#006D9C] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#006D9C] disabled:pointer-events-none disabled:opacity-50 dark:bg-[#008CBA] dark:hover:bg-[#006D9C] dark:focus-visible:ring-[#006D9C]"
+                href="#"
+              >
+                Ver producto
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-600">
+          <div className="relative group">
+            <img
+              alt="Producto 4"
+              className="w-full h-60 object-cover"
+              height={300}
+              src="/placeholder.svg"
+              style={{
+                aspectRatio: "400/300",
+                objectFit: "cover",
+              }}
+              width={400}
+            />
+            <Link className="absolute inset-0 z-10" href="#">
+              <span className="sr-only">View</span>
+            </Link>
+          </div>
+
+          <div className="p-4 flex flex-col gap-4">
+            <div>
+              <h3 className="text-lg font-semibold">Producto 4</h3>
+              <div className="flex items-center gap-2">
+                <Badge className="bg-[#673AB7] text-white" variant="outline">
+                  Taza
+                </Badge>
+              </div>
+              <p className="text-gray-500 dark:text-gray-400">Descripción del producto 4</p>
+              <div className="flex justify-between items-center">
+                <p className="text-gray-500 dark:text-gray-400">En stock: 75 unidades</p>
+                <p className="text-lg font-semibold">$59.99</p>
+              </div>
+            </div>
+            <div className="flex justify-between gap-2">
+              <Button
+                className="bg-[#4CAF50] text-white hover:bg-[#45a049] dark:bg-[#4CAF50] dark:text-white dark:hover:bg-[#45a049]"
+                size="sm"
+                variant="outline"
+              >
+                Agregar al carrito
+              </Button>
+              <Link
+                className="inline-flex h-8 items-center justify-center rounded-md bg-[#008CBA] px-4 text-sm font-medium text-white shadow transition-colors hover:bg-[#006D9C] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#006D9C] disabled:pointer-events-none disabled:opacity-50 dark:bg-[#008CBA] dark:hover:bg-[#006D9C] dark:focus-visible:ring-[#006D9C]"
+                href="#"
+              >
+                Ver producto
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700">
           <div className="relative group">
             <img
               alt="Producto 4"
@@ -303,6 +415,56 @@ export function FiltroListadoProductos() {
             </div>
           </div>
         </div>
+
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-800">
+          <div className="relative group">
+            <img
+              alt="Producto 4"
+              className="w-full h-60 object-cover"
+              height={300}
+              src="/placeholder.svg"
+              style={{
+                aspectRatio: "400/300",
+                objectFit: "cover",
+              }}
+              width={400}
+            />
+            <Link className="absolute inset-0 z-10" href="#">
+              <span className="sr-only">View</span>
+            </Link>
+          </div>
+          <div className="p-4 flex flex-col gap-4">
+            <div>
+              <h3 className="text-lg font-semibold">Producto 4</h3>
+              <div className="flex items-center gap-2">
+                <Badge className="bg-[#673AB7] text-white" variant="outline">
+                  Taza
+                </Badge>
+              </div>
+              <p className="text-gray-500 dark:text-gray-400">Descripción del producto 4</p>
+              <div className="flex justify-between items-center">
+                <p className="text-gray-500 dark:text-gray-400">En stock: 75 unidades</p>
+                <p className="text-lg font-semibold">$59.99</p>
+              </div>
+            </div>
+            <div className="flex justify-between gap-2">
+              <Button
+                className="bg-[#4CAF50] text-white hover:bg-[#45a049] dark:bg-[#4CAF50] dark:text-white dark:hover:bg-[#45a049]"
+                size="sm"
+                variant="outline"
+              >
+                Agregar al carrito
+              </Button>
+              <Link
+                className="inline-flex h-8 items-center justify-center rounded-md bg-[#008CBA] px-4 text-sm font-medium text-white shadow transition-colors hover:bg-[#006D9C] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#006D9C] disabled:pointer-events-none disabled:opacity-50 dark:bg-[#008CBA] dark:hover:bg-[#006D9C] dark:focus-visible:ring-[#006D9C]"
+                href="#"
+              >
+                Ver producto
+              </Link>
+            </div>
+          </div>
+        </div>
+
       </section>
     </div>
   )
