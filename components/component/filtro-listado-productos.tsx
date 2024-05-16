@@ -30,6 +30,25 @@ export function FiltroListadoProductos() {
       <div className="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700 p-4 md:p-6">
         <h2 className="text-lg font-semibold mb-8">Filtro</h2>
         <div className="grid gap-4">
+
+        <div className="relative">
+            <label
+              className="absolute -top-3 left-3 text-sm font-medium text-gray-700 dark:text-gray-400 bg-white dark:bg-gray-700 px-1 z-10"
+              htmlFor="product-name"
+            >
+              Producto
+            </label>
+            <div className="mt-1">
+              <input
+                className="shadow-sm focus:ring-0 focus:border-gray-300 block w-full sm:text-sm border-0 rounded-md dark:bg-gray-800 dark:text-gray-400 transition-all duration-300 ease-in-out transform focus:scale-105 pt-3 pb-1"
+                id="product-name"
+                name="product-name"
+                placeholder="    Busca aqui"
+                type="text"
+              />
+            </div>
+          </div>
+
           <div className="relative">
             <label
               className="absolute -top-3 left-3 text-sm font-medium text-gray-700 dark:text-gray-400 bg-white dark:bg-gray-700 px-1 z-10"
@@ -50,6 +69,7 @@ export function FiltroListadoProductos() {
               />
             </div>
           </div>
+
           <div className="relative">
             <label
               className="absolute -top-3 left-3 text-sm font-medium text-gray-700 dark:text-gray-400 bg-white dark:bg-gray-700 px-1 z-10"
@@ -70,29 +90,15 @@ export function FiltroListadoProductos() {
               />
             </div>
           </div>
-          <div className="relative">
-            <label
-              className="absolute -top-3 left-3 text-sm font-medium text-gray-700 dark:text-gray-400 bg-white dark:bg-gray-700 px-1 z-10"
-              htmlFor="product-name"
-            >
-              Producto
-            </label>
-            <div className="mt-1">
-              <input
-                className="shadow-sm focus:ring-0 focus:border-gray-300 block w-full sm:text-sm border-0 rounded-md dark:bg-gray-800 dark:text-gray-400 transition-all duration-300 ease-in-out transform focus:scale-105 pt-3 pb-1"
-                id="product-name"
-                name="product-name"
-                placeholder="    Busca aqui"
-                type="text"
-              />
-            </div>
-          </div>
+
+          
+
           <div className="relative">
             <label
               className="absolute -top-3 left-3 text-sm font-medium text-gray-700 dark:text-gray-400 bg-white dark:bg-gray-700 px-1 z-10"
               htmlFor="tags"
             >
-              Tags
+              Tags general
             </label>
             <div className="mt-1">
               <Select>
@@ -107,22 +113,48 @@ export function FiltroListadoProductos() {
               </Select>
             </div>
           </div>
+
+
+          <div className="relative">
+            <label
+              className="absolute -top-3 left-3 text-sm font-medium text-gray-700 dark:text-gray-400 bg-white dark:bg-gray-700 px-1 z-10"
+              htmlFor="tags"
+            >
+              Prodcuto dependiendo
+            </label>
+            <div className="mt-1">
+              <Select>
+                <SelectTrigger id="tags">
+                  <SelectValue placeholder="Select tags" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="tag1">Tag 1</SelectItem>
+                  <SelectItem value="tag2">Tag 2</SelectItem>
+                  <SelectItem value="tag3">Tag 3</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
+
+
           <Button className="w-full" size="sm">
             Aplicar filtro
           </Button>
         </div>
       </div>
+
+      
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
 
 
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-200">
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700">
           <div className="relative group">
             <img
               alt="Producto 1"
               className="w-full h-60 object-cover"
               height={300}
-              src="/placeholder.svg"
+              src="../../img/mace1.png"
               style={{
                 aspectRatio: "400/300",
                 objectFit: "cover",
@@ -135,9 +167,9 @@ export function FiltroListadoProductos() {
           </div>
           <div className="p-4 flex flex-col gap-4">
             <div>
-              <h3 className="text-lg font-semibold">Producto 1</h3>
+              <h3 className="text-lg font-semibold ">Producto 1</h3>
               <div className="flex items-center gap-2">
-                <Badge className="bg-[#4CAF50] text-white" variant="outline">
+                <Badge className="bg-[#39A01A] text-white" variant="outline">
                   Camiseta
                 </Badge>
               </div>
@@ -188,7 +220,7 @@ export function FiltroListadoProductos() {
             <div>
               <h3 className="text-lg font-semibold">Producto 2</h3>
               <div className="flex items-center gap-2">
-                <Badge className="bg-[#FFC107] text-white" variant="outline">
+                <Badge className="bg-[#C1B720] text-white" variant="outline">
                   Llavero
                 </Badge>
               </div>
@@ -242,9 +274,9 @@ export function FiltroListadoProductos() {
                   Figura
                 </Badge>
               </div>
-              <p className="text-gray-500 dark:text-gray-400">Descripción del producto 3</p>
+              <p className="text-gray-500 dark:text-gray-700">Descripción del producto 3</p>
               <div className="flex justify-between items-center">
-                <p className="text-gray-500 dark:text-gray-400">En stock: 100 unidades</p>
+                <p className="text-gray-500 dark:text-gray-700">En stock: 100 unidades</p>
                 <p className="text-lg font-semibold">$79.99</p>
               </div>
             </div>
