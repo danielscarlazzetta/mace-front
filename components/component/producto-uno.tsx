@@ -40,13 +40,13 @@ export function ProductoUno() {
       </div>
       <div className="grid gap-4 md:gap-10 items-start">
         <div className="grid gap-4">
-          <h1 className="font-bold text-3xl lg:text-4xl">Camiseta Acme Circles</h1>
+          <h1 className="font-bold text-3xl lg:text-4xl">Figura Mace</h1>
           <div className="flex flex-wrap gap-2">
-            <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">60% algodón</div>
-            <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">40% poliéster</div>
+            <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">Figura</div>
+            <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">League of leguens</div>
           </div>
           <div>
-            <p>Camiseta de jersey de 60% algodón peinado y 40% poliéster.</p>
+            <p>asd asd asd asd asdaef asda sda asd as dasdasdsd fzxcv sdf asd asdadsfasd asdfasda</p>
           </div>
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-0.5">

@@ -157,7 +157,7 @@ export function FiltroListadoProductos() {
               </Button>
               <Link
                 className="inline-flex h-8 items-center justify-center rounded-md bg-[#008CBA] px-4 text-sm font-medium text-white shadow transition-colors hover:bg-[#006D9C] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#006D9C] disabled:pointer-events-none disabled:opacity-50 dark:bg-[#008CBA] dark:hover:bg-[#006D9C] dark:focus-visible:ring-[#006D9C]"
-                href="/producto1"
+                href="/producto-unos"
               >
                 Ver producto
               </Link>

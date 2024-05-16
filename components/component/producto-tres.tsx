@@ -43,25 +43,23 @@ export function ProductoTres() {
       <div className="grid gap-4 md:gap-10 items-start">
         <div className="grid gap-2">
           <div className="flex items-center gap-2">
-            <Badge className="bg-gray-900/10 text-gray-900 dark:bg-gray-900/20 dark:text-gray-900 dark:bg-gray-50/10 dark:text-gray-50 dark:dark:bg-gray-50/20 dark:dark:text-gray-50">New</Badge>
-            <Badge className="bg-success/10 text-success dark:bg-success/20 dark:text-success">In Stock</Badge>
+            <Badge className="bg-gray-900/10 text-gray-900 dark:bg-gray-900/20 dark:text-gray-900 dark:bg-gray-50/10 dark:text-gray-50 dark:dark:bg-gray-50/20 dark:dark:text-gray-50">Nuevo!</Badge>
+            <Badge className="bg-success/10 text-success dark:bg-success/20 dark:text-success">Polera hombre</Badge>
+            <Badge className="bg-success/10 text-success dark:bg-success/20 dark:text-success">One pice</Badge>
           </div>
-          <h1 className="font-bold text-3xl lg:text-4xl">Acme Prism T-Shirt: The Cozy Chromatic Blend</h1>
+          <h1 className="font-bold text-3xl lg:text-4xl">Polera One Pice</h1>
         </div>
         <div className="grid gap-4">
           <div className="text-sm leading-loose text-gray-500 dark:text-gray-400">
             <p>
-              Introducing the Acme Prism T-Shirt, a perfect blend of style and comfort for the modern individual. This
-              tee is crafted with a meticulous composition of 60% combed ringspun cotton and 40% polyester jersey,
-              ensuring a soft and breathable fabric that feels gentle against the skin.
+              kjhdshd dkjdasjkhas dhdkjhd dakjah dkhad dkjhad  kasjh adkjh d kajsh kajshd kajhasd kdjh kjahs kjahs kjahsd kjahs dkjhd jhakjhd kjash kajsdh askdjh
             </p>
             <p>
-              The design of the Acme Prism T-Shirt is as striking as it is comfortable. The shirt features a unique
-              prism-inspired pattern that adds a modern and eye-catching touch to your ensemble.
+              Tkjhdshd dkjdasjkhas dhdasasd  kasjh adkjh dasasaskdjh kjahs kjahs kjaadsassd kjash kajsdh askdjh
             </p>
           </div>
           <div className="flex items-center gap-4">
-            <div className="text-4xl font-bold">$99</div>
+            <div className="text-4xl font-bold">$100</div>
             <div className="flex items-center gap-2">
               <StarIcon className="w-5 h-5 fill-gray-900 dark:fill-gray-50" />
               <StarIcon className="w-5 h-5 fill-gray-900 dark:fill-gray-50" />
@@ -73,7 +71,7 @@ export function ProductoTres() {
           <div className="grid gap-4">
             <div className="grid gap-2">
               <Label className="text-base" htmlFor="quantity">
-                Quantity
+                Cantidad
               </Label>
               <div className="flex items-center gap-2">
                 <Button size="icon" variant="outline">
@@ -85,7 +83,7 @@ export function ProductoTres() {
                 </Button>
               </div>
             </div>
-            <Button size="lg">Add to cart</Button>
+            <Button size="lg">Agregar al carrito</Button>
           </div>
         </div>
       </div>

@@ -35,7 +35,7 @@ export function ProductoDos() {
       <div className="grid gap-4 md:gap-10 items-start order-2 md:order-1">
         <div className="hidden md:flex items-start">
           <div className="grid gap-4">
-            <h1 className="font-bold text-3xl">Camiseta Prism CottonSculpt: La Cálida Mezcla Cromática</h1>
+            <h1 className="font-bold text-3xl">Figura Dragon ball</h1>
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-0.5">
                 <StarIcon className="w-5 h-5 fill-gray-900 dark:fill-gray-50" />
@@ -46,7 +46,7 @@ export function ProductoDos() {
               </div>
             </div>
             <div>
-              <p>60% algodón peinado/40% poliéster jersey.</p>
+              <p>6jkkjjdsasd jshga8 8a7asd jasdjh</p>
             </div>
           </div>
           <div className="text-4xl font-bold ml-auto">$99</div>
@@ -54,7 +54,7 @@ export function ProductoDos() {
         <form className="grid gap-4 md:gap-10">
           <div className="grid gap-2">
             <Label className="text-base" htmlFor="color">
-              Color
+              Estilo
             </Label>
             <RadioGroup className="flex items-center gap-2" defaultValue="black" id="color">
               <Label
@@ -62,27 +62,27 @@ export function ProductoDos() {
                 htmlFor="color-black"
               >
                 <RadioGroupItem id="color-black" value="black" />
-                Negro
+                Normal
               </Label>
               <Label
                 className="border cursor-pointer rounded-md p-2 flex items-center gap-2 [&:has(:checked)]:bg-gray-100 dark:[&:has(:checked)]:bg-gray-800"
                 htmlFor="color-white"
               >
                 <RadioGroupItem id="color-white" value="white" />
-                Blanco
+                Saya
               </Label>
               <Label
                 className="border cursor-pointer rounded-md p-2 flex items-center gap-2 [&:has(:checked)]:bg-gray-100 dark:[&:has(:checked)]:bg-gray-800"
                 htmlFor="color-blue"
               >
                 <RadioGroupItem id="color-blue" value="blue" />
-                Azul
+                Dios
               </Label>
             </RadioGroup>
           </div>
           <div className="grid gap-2">
             <Label className="text-base" htmlFor="size">
-              Talla
+              Tamano
             </Label>
             <RadioGroup className="flex items-center gap-2" defaultValue="m" id="size">
               <Label
@@ -90,35 +90,35 @@ export function ProductoDos() {
                 htmlFor="size-xs"
               >
                 <RadioGroupItem id="size-xs" value="xs" />
-                XS
+                24 cm
               </Label>
               <Label
                 className="border cursor-pointer rounded-md p-2 flex items-center gap-2 [&:has(:checked)]:bg-gray-100 dark:[&:has(:checked)]:bg-gray-800"
                 htmlFor="size-s"
               >
                 <RadioGroupItem id="size-s" value="s" />
-                S{"\n"}
+                22 cm{"\n"}
               </Label>
               <Label
                 className="border cursor-pointer rounded-md p-2 flex items-center gap-2 [&:has(:checked)]:bg-gray-100 dark:[&:has(:checked)]:bg-gray-800"
                 htmlFor="size-m"
               >
                 <RadioGroupItem id="size-m" value="m" />
-                M{"\n"}
+                16cm{"\n"}
               </Label>
               <Label
                 className="border cursor-pointer rounded-md p-2 flex items-center gap-2 [&:has(:checked)]:bg-gray-100 dark:[&:has(:checked)]:bg-gray-800"
                 htmlFor="size-l"
               >
                 <RadioGroupItem id="size-l" value="l" />
-                L{"\n"}
+                12cm{"\n"}
               </Label>
               <Label
                 className="border cursor-pointer rounded-md p-2 flex items-center gap-2 [&:has(:checked)]:bg-gray-100 dark:[&:has(:checked)]:bg-gray-800"
                 htmlFor="size-xl"
               >
                 <RadioGroupItem id="size-xl" value="xl" />
-                XL
+                8cm
               </Label>
             </RadioGroup>
           </div>
@@ -144,22 +144,19 @@ export function ProductoDos() {
         <Separator />
         <div className="grid gap-4 text-sm leading-loose">
           <p>
-            Presentamos la Camiseta Prism de Acme, una mezcla perfecta de estilo y comodidad para el individuo moderno.
-            Esta camiseta está fabricada con una composición meticulosa de 60% algodón peinado y 40% poliéster jersey,
-            asegurando una tela suave y transpirable que se siente delicada contra la piel.
+            Esta figura bla bla kkds jjdjd dhahd adkjhdkhjd kadjh dakjad kjashd
           </p>
           <p>
-            El diseño de la Camiseta Prism de Acme es tan impactante como cómodo. La camiseta presenta un patrón
-            inspirado en el prisma que agrega un toque moderno y cautivador a tu conjunto.
+            El diseno de esto es kjhdhjkd ndndiudndnkahd jdhdakjd kjhdkajbndkajhadknbd kjh kjdh kasjhd anbdakjshd asbdkj
           </p>
         </div>
       </div>
       <div className="grid gap-3 items-start order-1">
         <div className="flex md:hidden items-start">
           <div className="grid gap-4">
-            <h1 className="font-bold text-2xl sm:text-3xl">Camiseta Prism CottonSculpt: La Cálida Mezcla Cromática</h1>
+            <h1 className="font-bold text-2xl sm:text-3xl">a</h1>
             <div>
-              <p>60% algodón peinado/40% poliéster jersey.</p>
+              <p>espacio por completar</p>
             </div>
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-0.5">
